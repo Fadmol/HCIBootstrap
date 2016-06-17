@@ -15,6 +15,7 @@
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
     <!-- CUSTOM STYLE  -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    
      <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -95,7 +96,7 @@
                             <li><a  href="index.html">Beranda</a></li>
                             <li><a href="obat.html">Obat</a></li>
                             <li><a  href="kasir.html">Kasir</a></li>
-                            <li><a class="menu-top-active" href="sejarah.html">Sejarah</a></li>
+                            <li><a class="menu-top-active" href="sejarah.html">Riwayat</a></li>
 
                         </ul>
                     </div>
@@ -115,16 +116,7 @@
                
   
 		<div class="row">
-            
-            
-		<select class="form-control" style="width: 147px">		
-			<option value="Filter" selected="selected" style="display:none;" disabled>Filter</option>
-			<option value="Hari Ini">Hari ini</option>
-			<option value="Kemarin">Kemarin</option>
-			<option value="Seminggu Terakhir">Seminggu Terakhir</option>
-			<option value="Sebulan Terakhir">Sebulan Terakhir</option>
-		</select>
-			<table class="table table-hover">
+			<table id="example1" class="table table-hover">
 
                               <thead>                  	  
                               <tr>
@@ -157,25 +149,7 @@
                               </tr>
                               </tbody>                              
                           </table>
-                          <div align="right">						
-								  <ul class="pagination">
-								    <li>
-								      <a href="#" aria-label="Previous">
-								        <span aria-hidden="true">&laquo;</span>
-								      </a>
-								    </li>
-								    <li  class="active"><a href="#">1</a></li>
-								    <li><a href="#">2</a></li>
-								    <li><a href="#">3</a></li>
-								    <li><a href="#">4</a></li>
-								    <li><a href="#">5</a></li>
-								    <li>
-								      <a href="#" aria-label="Next">
-								        <span aria-hidden="true">&raquo;</span>
-								      </a>
-								    </li>
-								  </ul>
-								  </div>
+                          
 		</div>
 
 	</div>
@@ -277,8 +251,24 @@
     <!-- FOOTER SECTION END-->
     <!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
     <!-- CORE JQUERY SCRIPTS -->
-    <script src="assets/js/jquery-1.11.1.js"></script>
-    <!-- BOOTSTRAP SCRIPTS  -->
-    <script src="assets/js/bootstrap.js"></script>
+   <script src="js/jquery.js"></script>
+<script src="js/jQuery-2.2.0.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="datatables/jquery.dataTables.js"></script>
+        <script src="datatables/dataTables.bootstrap.js"></script>
+
+    
+    <script>
+  $(function () {
+ $("#example1").DataTable();
+  
+  });
+</script>
+
 </body>
 </html>

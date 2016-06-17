@@ -95,7 +95,7 @@
                             <li><a  href="index.html">Beranda</a></li>
                             <li><a class="menu-top-active" href="obat.html">Obat</a></li>
                             <li><a href="kasir.html">Kasir</a></li>
-                            <li><a href="sejarah.html">Sejarah</a></li>
+                            <li><a href="sejarah.html">Riwayat</a></li>
 
                         </ul>
                     </div>
@@ -119,19 +119,14 @@
 
 		 <div class="row">
 		 <!-- tombol tambah obat -->
-		 	<a href="#" class="btn btn-info" role="button">Tambah Obat</a>
+		 	<a data-toggle="modal" class="btn btn-info" data-target="#tambah" role="button">Tambah Obat</a>
 
-
-		 	<form class="navbar-form navbar-right" role="search">
-  <div class="form-group">
-    <input type="text" class="form-control" placeholder="Masukkan Nama Obat">
-  </div>
-  <button type="submit" class="btn btn-default">Cari</button>
-</form>	   
+<!-- <input aria-controls="lookup" class="form-control input-sm" type="search"> -->
+		 	
 </div>
+            <div class="center">
 					 <!-- Membuat tabel -->
-					 <table class="table table-hover">
-
+					 <table  id="example1" class="table table-bordered table-striped">
                               <thead>                  	  
                               <tr>
                                   <th>No.</th>
@@ -150,8 +145,8 @@
                                   <td>Rp. 20.000</td>
                                   <td>Tersedia</td>
 								  <td>
-								 <button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button>
-								 <button class="btn btn-danger"><i class="fa fa-pencil"></i> Hapus </button>
+								 <button class="btn btn-primary" data-toggle="modal" data-target="#edit" ><i class="fa fa-edit "></i> Edit</button>
+								 <button class="btn btn-danger"data-toggle="modal" data-target="#delete"><i class="fa fa-pencil"></i> Hapus </button>
 								 </td>
                               </tr>
                               <tr>
@@ -161,8 +156,8 @@
                                   <td>Rp. 5.500</td>
                                   <td>Tersedia</td>
 								  <td>
-								  <button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button>
-								 <button class="btn btn-danger"><i class="fa fa-pencil"></i> Hapus </button>
+								  <button class="btn btn-primary" data-toggle="modal" data-target="#edit" ><i class="fa fa-edit "></i> Edit</button>
+								 <button class="btn btn-danger"data-toggle="modal" data-target="#delete"><i class="fa fa-pencil"></i> Hapus </button>
 								 </td>
                               </tr>
                               <tr>
@@ -172,8 +167,8 @@
                                   <td>Rp. 5.000</td>
                                   <td>Tersedia</td>
 								  <td>
-								 <button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button>
-								 <button class="btn btn-danger"><i class="fa fa-pencil"></i> Hapus </button>
+								 <button class="btn btn-primary" data-toggle="modal" data-target="#edit" ><i class="fa fa-edit "></i> Edit</button>
+								 <button class="btn btn-danger"data-toggle="modal" data-target="#delete"><i class="fa fa-pencil"></i> Hapus </button>
 								  </td>
                               </tr>
                               <tr>
@@ -183,8 +178,8 @@
                                   <td>Rp. 13.000</td>
                                   <td>Tersedia</td>
 								  <td>
-								 <button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button>
-								 <button class="btn btn-danger"><i class="fa fa-pencil"></i> Hapus </button>
+								 <button class="btn btn-primary"data-toggle="modal" data-target="#edit" ><i class="fa fa-edit "></i> Edit</button>
+								 <button class="btn btn-danger"data-toggle="modal" data-target="#delete"><i class="fa fa-pencil"></i> Hapus </button>
 								  </td>
                               </tr>
                               <tr>
@@ -194,8 +189,8 @@
                                   <td>Rp. 9.900</td>
                                   <td>Kosong</td>
 								  <td>
-								 <button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button>
-								 <button class="btn btn-danger"><i class="fa fa-pencil"></i> Hapus </button>
+								 <button class="btn btn-primary"data-toggle="modal" data-target="#edit" ><i class="fa fa-edit "></i> Edit</button>
+								 <button class="btn btn-danger"data-toggle="modal" data-target="#delete"><i class="fa fa-pencil"></i> Hapus </button>
 								  </td>
                               </tr>
                               <tr>
@@ -205,7 +200,7 @@
                                   <td>Rp. 5.000</td>
                                   <td>Tersedia</td>
 								  <td>
-								 <button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button>
+								 <button class="btn btn-primary"data-toggle="modal" data-target="#edit" ><i class="fa fa-edit "></i> Edit</button>
 								 <button class="btn btn-danger"><i class="fa fa-pencil"></i> Hapus </button>
 								  </td>
                               </tr>
@@ -216,7 +211,7 @@
                                   <td>Rp. 10.000</td>
                                   <td>Kosong</td>
 								  <td>
-								 <button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button>
+								 <button class="btn btn-primary"data-toggle="modal" data-target="#edit" ><i class="fa fa-edit "></i> Edit</button>
 								 <button class="btn btn-danger"><i class="fa fa-pencil"></i> Hapus </button>
 								  </td>
                               </tr>
@@ -227,8 +222,8 @@
                                   <td>Rp. 13.500</td>
                                   <td>Tersedia</td>
 								  <td>
-								 <button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button>
-								 <button class="btn btn-danger"><i class="fa fa-pencil"></i> Hapus </button>
+								 <button class="btn btn-primary"data-toggle="modal" data-target="#edit" ><i class="fa fa-edit "></i> Edit</button>
+								 <button class="btn btn-danger"data-toggle="modal" data-target="#delete"><i class="fa fa-pencil"></i> Hapus </button>
 								  </td>
                               </tr>
                               <tr>
@@ -238,8 +233,8 @@
                                   <td>Rp. 450.000</td>
                                   <td>Tersedia</td>
 								  <td>
-								 <button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button>
-								 <button class="btn btn-danger"><i class="fa fa-pencil"></i> Hapus </button>
+								 <button class="btn btn-primary"data-toggle="modal" data-target="#edit" ><i class="fa fa-edit "></i> Edit</button>
+								 <button class="btn btn-danger"data-toggle="modal" data-target="#delete"><i class="fa fa-pencil"></i> Hapus </button>
 								  </td>
                               </tr>
                               <tr>
@@ -249,32 +244,14 @@
                                   <td>Rp. 3.500</td>
                                   <td>Tersedia</td>
 								  <td>
-                                <button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button>
-								 <button class="btn btn-danger"><i class="fa fa-pencil"></i> Hapus </button>
+                                <button class="btn btn-primary"data-toggle="modal" data-target="#edit" ><i class="fa fa-edit "></i> Edit</button>
+								 <button class="btn btn-danger"data-toggle="modal" data-target="#delete"><i class="fa fa-pencil"></i> Hapus </button>
 								  </td>
                               </tr>
                               </tbody>                              
                           </table>
-                           <!-- membuat pagination -->	
-                           <div align="right">						
-								  <ul class="pagination">
-								    <li>
-								      <a href="#" aria-label="Previous">
-								        <span aria-hidden="true">&laquo;</span>
-								      </a>
-								    </li>
-								    <li  class="active"><a href="#">1</a></li>
-								    <li><a href="#">2</a></li>
-								    <li><a href="#">3</a></li>
-								    <li><a href="#">4</a></li>
-								    <li><a href="#">5</a></li>
-								    <li>
-								      <a href="#" aria-label="Next">
-								        <span aria-hidden="true">&raquo;</span>
-								      </a>
-								    </li>
-								  </ul>
-								  </div>
+                 </div>
+                          
                           
                   </div>
                     <!--  end  Context Classes  -->
@@ -283,6 +260,13 @@
 
         </div>
     </div>
+    
+    
+    
+    
+    
+    
+    
     <!-- CONTENT-WRAPPER SECTION END-->
     <footer>
         <div class="container">
@@ -294,11 +278,227 @@
             </div>
         </div>
     </footer>
+    
+    
+    
+    
+<!-- tombol delete -->
+<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        
+                    <p class="text-center title"> <strong>Daftar Obat terhapus</strong>
+                    </p>
+                   
+
+            <!-- close notif -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+       </div>
+            </div>
+        </div>
+
+
+
+
+<!-- tombol edit -->
+<div class="modal fade" id="notifedit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        
+                    <p class="text-center title"> <strong>Data Obat Terubah</strong>
+                    </p>
+                   
+
+            <!-- close notif -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+       </div>
+            </div>
+        </div>
+
+
+        <!-- tombol tambah -->
+<div class="modal fade" id="tambahAlert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        
+                    <p class="text-center title"> <strong>Data Obat Telah Ditambah</strong>
+                    </p>
+                   
+
+            <!-- close notif -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+       </div>
+            </div>
+        </div>
+
+
+        <!-- Modal Tambah -->
+<div class="modal fade" id="tambah" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Tambah Obat</h4>
+      </div>
+      <div class="modal-body">
+        <table align="center" border=0 cellpadding=5 cellspacing=0>
+            <tr>
+                <td>Kode Obat</td>
+                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                <td><input type="text" name="tanggal" placeholder="Kode" size="3"> - <input type="text" size="14" ></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Nama Obat</td>
+                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                 
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Harga</td>
+                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Keterangan</td>
+                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                <td>
+                <select>
+                <option>Tersedia</option>
+                <option>Kosong</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+            <td>&nbsp;</td>
+            </tr>
+        </table>
+      </div>
+      <div class="modal-footer">      
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#tambahAlert" data-dismiss="modal">Tambah</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Edit -->
+<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Edit Data Obat</h4>
+      </div>
+      <div class="modal-body">
+      <table align="center" border=0 cellpadding=5 cellspacing=0>
+            <tr>
+                <td>Kode Obat</td>
+                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                <td><input type="text" name="tanggal" placeholder="OF" size="1" disabled> - <input type="text" value="0001" size="14" ></td>
+                
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Nama Obat</td>
+                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                <td><input type="text" value="Salbutamol"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Harga</td>
+                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                <td><input type="text" value="20.000"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Keterangan</td>
+                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                <td>
+                <select>
+                <option>Kosong</option>
+                <option>Tersedia</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+            <td>&nbsp;</td>
+            </tr>
+        </table>
+      </div>
+      <div class="modal-footer"> 
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#notifedit" data-dismiss="modal">Simpan</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+    
     <!-- FOOTER SECTION END-->
     <!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
     <!-- CORE JQUERY SCRIPTS -->
-    <script src="assets/js/jquery-1.11.1.js"></script>
-    <!-- BOOTSTRAP SCRIPTS  -->
-    <script src="assets/js/bootstrap.js"></script>
+   
+    <!-- jQuery -->
+ <script src="js/jquery.js"></script>
+<script src="js/jQuery-2.2.0.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="datatables/jquery.dataTables.js"></script>
+        <script src="datatables/dataTables.bootstrap.js"></script>
+    
+    <script>
+  $(function () {
+    $("#lookup").DataTable();
+ $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
+    });
+  });
+</script>
+    
 </body>
 </html>
